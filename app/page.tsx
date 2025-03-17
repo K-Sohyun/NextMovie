@@ -69,7 +69,6 @@ export default function HomePage() {
     <div className={styles.container}>
       <h1>🎬 인기 영화</h1>
 
-      {/* 검색 바 */}
       <div className={styles.searchBar}>
         <input
           type="text"
