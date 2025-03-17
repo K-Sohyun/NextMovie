@@ -1,0 +1,98 @@
+.container {
+  background: #111;
+  padding: 5rem;
+  min-height: 100vh;
+
+  * {
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .searchBar {
+    display: flex;
+    width: 50rem;
+    margin: 0 auto 8rem;
+
+    input {
+      width: calc(100% - 90px);
+      height: 46px;
+      font-size: 1.5rem;
+      background: #fff;
+      color: #777;
+      padding: 0 2rem;
+    }
+
+    button {
+      width: 90px;
+      height: 46px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      background-color: #2e77ff;
+      transition: 0.3s;
+
+      &:hover {
+        background: #2a66d5;
+      }
+    }
+  }
+
+  .homeButton {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin: 5rem 0;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  .movieList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem 3rem;
+
+    .movieItem {
+      width: calc(20% - 2.4rem);
+      text-align: center;
+
+      .link {
+        display: block;
+        padding: 0 10px;
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+
+        .imgBox {
+          display: block;
+          position: relative;
+          width: 100%;
+          padding-top: 140%;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .title {
+          font-size: 2.2rem;
+          line-height: 1.4;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

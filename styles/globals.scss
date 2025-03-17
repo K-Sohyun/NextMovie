@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+  min-width: 1000px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  font-family: 'Noto Sans KR';
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  border: none;
+  font-family: 'Noto Sans KR';
+  outline: none;
+}
